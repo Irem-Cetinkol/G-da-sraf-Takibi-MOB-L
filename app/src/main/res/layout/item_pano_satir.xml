@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#FFF9F5"
+    android:padding="12dp"
+    android:layout_marginBottom="8dp"
+    android:gravity="center_vertical"
+    android:elevation="2dp">
+
+    <ImageView
+        android:id="@+id/imgSatirIkon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/sut"
+        android:layout_marginEnd="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtSatirIsim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Süt"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#8D6E63"/>
+
+        <TextView
+            android:id="@+id/txtSatirAcilma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Açılış: 10/05/2026"
+            android:textColor="#757575"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/txtSatirTett"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TETT: 20/05/2026"
+            android:textColor="#D32F2F"
+            android:textStyle="bold"
+            android:textSize="12sp"/>
+    </LinearLayout>
+</LinearLayout>

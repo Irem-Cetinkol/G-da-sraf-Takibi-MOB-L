@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#FFF9F5"
+    android:padding="12dp"
+    android:layout_marginBottom="8dp"
+    android:gravity="center_vertical"
+    android:elevation="2dp">
+
+    <ImageView
+        android:id="@+id/imgSatirIkon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/sut"
+        android:layout_marginEnd="12dp"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtSatirIsim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Süt"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#8D6E63"/>
+
+        <TextView
+            android:id="@+id/txtSatirDetay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Miktar: 2 Adet"
+            android:textColor="#757575"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/txtSatirFiyat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₺12.99"
+            android:textColor="#D32F2F"
+            android:textStyle="bold"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btnSatirRafaKoy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kutu_beyaz_oval"
+        android:backgroundTint="#E8F5E9"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="6dp"
+        android:text="Rafa Koy 📥"
+        android:textColor="#2E7D32"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+</LinearLayout>

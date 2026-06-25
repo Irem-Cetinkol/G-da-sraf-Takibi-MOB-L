@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/odaCercevesi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF9F5"
+    android:clipChildren="false">
+
+    <ImageView
+        android:id="@+id/odaArkaplan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/oda_arkaplan"
+        android:scaleType="centerCrop" />
+
+    <FrameLayout
+        android:id="@+id/triggerKapsayici"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:elevation="1dp">
+
+        <View
+            android:id="@+id/triggerBuzdolabi"
+            android:layout_width="130dp"
+            android:layout_height="280dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="130dp"
+            android:background="#00FFFFFF"/>
+
+        <View
+            android:id="@+id/triggerUstDolap"
+            android:layout_width="140dp"
+            android:layout_height="110dp"
+            android:layout_gravity="end|top"
+            android:layout_marginEnd="260dp"
+            android:layout_marginTop="40dp"
+            android:background="#00FFFFFF"/>
+
+        <View
+            android:id="@+id/triggerAltDolap"
+            android:layout_width="200dp"
+            android:layout_height="130dp"
+            android:layout_gravity="start|bottom"
+            android:layout_marginStart="220dp"
+            android:layout_marginBottom="40dp"
+            android:background="#00FFFFFF"/>
+
+        <View
+            android:id="@+id/triggerCesme"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="start|top"
+            android:layout_marginStart="260dp"
+            android:layout_marginTop="140dp"
+            android:background="#00FFFFFF"/>
+    </FrameLayout>
+    <View
+        android:id="@+id/karartmaEkrani"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D8000000"
+        android:visibility="gone"
+        android:elevation="2dp"/>
+
+    <ImageView
+        android:id="@+id/buyukAcikEsyaGosterici"
+        android:layout_width="340dp"
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        android:elevation="5dp"/>
+
+    <LinearLayout
+        android:id="@+id/butonGrubu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:elevation="10dp"
+        android:gravity="center">
+
+        <TextView android:id="@+id/btnEsyayiKapat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/kutu_beyaz_oval" android:paddingHorizontal="16dp" android:paddingVertical="8dp" android:text="Kapat" android:textColor="#4CAF50" android:textStyle="bold" />
+        <TextView android:id="@+id/btnSabitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:visibility="gone" />
+        <TextView android:id="@+id/btnEsyayiKaldir" android:layout_width="wrap_content" android:layout_height="wrap_content" android:visibility="gone" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/sagPanelCercevesi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="15dp"
+        android:clipChildren="false">
+
+        <LinearLayout
+            android:id="@+id/menuYiyeceklerLayout"
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_marginVertical="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/kutu_pembe_oval"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:visibility="gone">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Envantere Ekle" android:textSize="18sp" android:textStyle="bold" android:textColor="#4CAF50" android:layout_gravity="center" android:layout_marginBottom="12dp"/>
+
+            <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:scrollbars="none" android:layout_marginBottom="12dp">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center">
+                    <TextView android:id="@+id/tabSut" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Süt" android:background="@drawable/kutu_beyaz_oval" android:paddingHorizontal="12dp" android:paddingVertical="8dp" android:textSize="13sp" android:textStyle="bold" android:textColor="#8D6E63" android:layout_marginEnd="4dp"/>
+                    <TextView android:id="@+id/tabSebze" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sebze" android:background="@drawable/kutu_beyaz_oval" android:paddingHorizontal="12dp" android:paddingVertical="8dp" android:textSize="13sp" android:textStyle="bold" android:textColor="#8D6E63" android:layout_marginHorizontal="2dp"/>
+                    <TextView android:id="@+id/tabMeyve" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Meyve" android:background="@drawable/kutu_beyaz_oval" android:paddingHorizontal="12dp" android:paddingVertical="8dp" android:textSize="13sp" android:textStyle="bold" android:textColor="#8D6E63" android:layout_marginHorizontal="2dp"/>
+                    <TextView android:id="@+id/tabEt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Et" android:background="@drawable/kutu_beyaz_oval" android:paddingHorizontal="12dp" android:paddingVertical="8dp" android:textSize="13sp" android:textStyle="bold" android:textColor="#8D6E63" android:layout_marginHorizontal="2dp"/>
+                    <TextView android:id="@+id/tabDiger" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Diğer" android:background="@drawable/kutu_beyaz_oval" android:paddingHorizontal="12dp" android:paddingVertical="8dp" android:textSize="13sp" android:textStyle="bold" android:textColor="#8D6E63" android:layout_marginStart="4dp"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E0E0E0" android:layout_marginBottom="8dp"/>
+
+            <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <GridLayout android:id="@+id/gridYiyecekler" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:columnCount="2" />
+            </ScrollView>
+
+            <TextView android:id="@+id/btnEnvanterPano2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:background="@drawable/kutu_beyaz_oval" android:backgroundTint="#E8F5E9" android:gravity="center" android:padding="10dp" android:text="Panoyu Aç 📋" android:textColor="#2E7D32" android:textStyle="bold" />
+            <TextView android:id="@+id/btnEldenPanoEkle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/kutu_beyaz_oval" android:backgroundTint="#FFEBEE" android:paddingHorizontal="12dp" android:paddingVertical="8dp" android:layout_marginTop="8dp" android:layout_gravity="center" android:text="Elden Ekle ❤️✏️" android:textColor="#D32F2F" android:textSize="14sp" android:textStyle="bold" />
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

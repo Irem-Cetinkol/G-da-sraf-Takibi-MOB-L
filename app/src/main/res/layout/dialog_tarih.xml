@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/kutu_beyaz_oval"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/txtDialogBaslik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yiyecek Bilgileri"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#8D6E63"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Miktarı:"
+                android:textStyle="bold"
+                android:textColor="#555555"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp"/>
+
+            <EditText
+                android:id="@+id/editMiktar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:textColor="#5D4037"
+                android:background="@android:color/transparent"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D7CCC8"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Açılma Tarihi:"
+                android:textStyle="bold"
+                android:textColor="#555555"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp"/>
+
+            <EditText
+                android:id="@+id/editAcilmaTarihi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tarihi seçin (İsteğe Bağlı)..."
+                android:focusable="false"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:textColor="#5D4037"
+                android:textColorHint="#A1887F"
+                android:background="@android:color/transparent"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D7CCC8"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TETT:"
+                android:textStyle="bold"
+                android:textColor="#555555"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp"/>
+
+            <EditText
+                android:id="@+id/editTett"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tarihi seçin..."
+                android:focusable="false"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:textColor="#5D4037"
+                android:textColorHint="#A1887F"
+                android:background="@android:color/transparent"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D7CCC8"
+                android:layout_marginBottom="8dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnKaydetVeEkle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Buzdolabına Ekle"
+        android:backgroundTint="#FFB6C1"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>
